@@ -12,7 +12,7 @@ read -p "Saisir la direction du flux, (D)ownload ou (U)pload :" direct
 
 # Suppression des virgules dans la listes des UID
 
-echo $users | sed -e "s.,//g" > uid.lst
+echo $users | sed -e "s/,//g" > uid.lst
 read $uid < uid.lst
 
 for i in $uid
