@@ -13,7 +13,7 @@ read -p "Saisir la direction du flux, (D)ownload ou (U)pload :" direct
 # Suppression des virgules dans la listes des UID
 
 echo $users | sed -e "s/,//g" > uid.lst
-read $uid < uid.lst
+read uid < uid.lst
 
 for i in $uid
         do echo "UID : $users" ; ls -ltr /apps/gtw1/Custo/commona/users/$idf/$direct*
